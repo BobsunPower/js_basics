@@ -1,4 +1,4 @@
-function nums1to20() {
+function nums1to10() {
     console.log(1);
     console.log(2);
     console.log(3);
