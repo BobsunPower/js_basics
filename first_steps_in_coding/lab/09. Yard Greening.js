@@ -1,5 +1,4 @@
-function yardGreening(meters){
-    let squareMeters = Number(meters)
+function yardGreening(squareMeters){
     let price = squareMeters * 7.61
     let discount = price * 0.18
     let total = price - discount
