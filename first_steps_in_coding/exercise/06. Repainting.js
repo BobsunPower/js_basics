@@ -6,9 +6,9 @@ function repaining(input) {
     let nylonQuantity = Number(input[0]) + 2;
     let paintQuantity = Number(input[1]) * 1.1;
     let separatorQuantity = Number(input[2]);
-    let hours = Number(input[3]);
+    let laborHours = Number(input[3]);
     let stockPrice = (nylonQuantity * nylonPrice) + (paintQuantity * paintPrice) + (separatorQuantity * separatorPrice) + bagsPrice;
     let laborPrice = stockPrice * 0.3;
-    let total = hours * laborPrice + stockPrice;
+    let total = laborHours * laborPrice + stockPrice;
     console.log(total);
   }
