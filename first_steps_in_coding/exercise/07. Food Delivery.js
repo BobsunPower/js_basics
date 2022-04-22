@@ -5,4 +5,3 @@ function foodDelivery(lst){
     let total = (chikenMenu + fishMenu + vegMenu) * 1.2 + 2.5
     console.log(total)
 }
-foodDelivery(["2 ","4 ","3 "])
