@@ -1,3 +1,3 @@
 function radiansToDegrees(rad) {
-    console.log(rad * 180 / Math.PI)
+    console.log(rad * 180 / Math.PI);
 }
