@@ -1,5 +1,5 @@
 function speedInfo(lst) {
-    let speed = Number(lst[0])
+    let speed = Number(lst[0]);
     if (speed <= 10) {
         console.log("slow");
       } else if (speed <= 50) {

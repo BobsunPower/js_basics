@@ -1,5 +1,5 @@
 function number100to200(lst) {
-    let num = Number(lst[0])
+    let num = Number(lst[0]);
     if (num < 100) {
         console.log("Less than 100");
       } else if (num <= 200) {
