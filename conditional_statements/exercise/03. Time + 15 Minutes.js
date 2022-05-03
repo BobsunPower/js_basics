@@ -1,13 +1,13 @@
-function timePlus15Minutes(input){
-    let hours = Number(input[0]);
-    let minutes = Number(input[1]) + 15;
+function timePlus15Minutes(lst) {
+    let hours = Number(lst[0]);
+    let minutes = Number(lst[1]) + 15;
     hours += parseInt(minutes / 60);
     minutes %= 60;
     if (hours > 23){
         hours %= 24;
     }
-    if(minutes < 10){
+    if(minutes < 10 ){
         minutes = "0" + minutes;
     }
-    console.log(`${hours}:${minutes}`)
+    console.log(`${hours}:${minutes}`);
 }
