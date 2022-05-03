@@ -13,5 +13,5 @@ function bonusScore(lst) {
     } else if (score % 10 == 5) {
         bonus += 2;
     }
-    console.log(`${bonus}\n${score + bonus}`)
+    console.log(`${bonus}\n${score + bonus}`);
 }
