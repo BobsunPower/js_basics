@@ -1,4 +1,4 @@
-function dayOfWeek(lst){
+function dayOfWeek(lst) {
     let num = Number(lst[0]);
     let day;
     switch(num){
