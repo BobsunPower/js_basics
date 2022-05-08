@@ -1,7 +1,6 @@
 function dayOfWeek(lst) {
     let num = Number(lst[0]);
-    let day;
-    switch(num){
+    switch(num) {
         case 1: day = "Monday"; break;
         case 2: day = "Tuesday"; break;
         case 3: day = "Wednesday"; break;
