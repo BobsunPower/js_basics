@@ -1,48 +1,47 @@
 function tradeComissions(lst) {
     let city = lst[0];
-    let sales = Number(lst[1]);
-    let comission = -1;
-    if (sales < 0 || !["Sofia", "Varna", "Plovdiv"].includes(city)) {
+    let sale = Number(lst[1]);
+    if (sale < 0 || !["Sofia", "Varna", "Plovdiv"].includes(city)) {
         console.log("error");
         return;
     }
     switch(city) {
         case "Sofia":
-            if (sales > 0 && sales <= 500) {
-                sales *= 0.05;
-            } else if (sales > 500 && sales <= 1000) {
-                sales *= 0.07;
-            } else if (sales > 1000 && sales <= 10000) {
-                sales *= 0.08;
-            } else if (sales > 10000) {
-                sales *= 0.12;
+            if (sale > 0 && sale <= 500) {
+                sale *= 0.05;
+            } else if (sale > 500 && sale <= 1000) {
+                sale *= 0.07;
+            } else if (sale > 1000 && sale <= 10000) {
+                sale *= 0.08;
+            } else if (sale > 10000) {
+                sale *= 0.12;
             }
             break;
             case "Varna":
-                if (sales > 0 && sales <= 500) {
-                    sales *= 0.045;
-                } else if (sales > 500 && sales <= 1000) {
-                    sales *= 0.075;
-                } else if (sales > 1000 && sales <= 10000) {
-                    sales *= 0.1;
-                } else if (sales > 10000) {
-                    sales *= 0.13;
+                if (sale > 0 && sale <= 500) {
+                    sale *= 0.045;
+                } else if (sale > 500 && sale <= 1000) {
+                    sale *= 0.075;
+                } else if (sale > 1000 && sale <= 10000) {
+                    sale *= 0.1;
+                } else if (sale > 10000) {
+                    sale *= 0.13;
                 }
                 break;
             case "Plovdiv":
-                if (sales > 0 && sales <= 500) {
-                    sales *= 0.055;
-                } else if (sales > 500 && sales <= 1000) {
-                    sales *= 0.08;
-                } else if (sales > 1000 && sales <= 10000) {
-                    sales *= 0.12;
-                } else if (sales > 10000) {
-                    sales *= 0.145;
+                if (sale > 0 && sale <= 500) {
+                    sale *= 0.055;
+                } else if (sale > 500 && sale <= 1000) {
+                    sale *= 0.08;
+                } else if (sale > 1000 && sale <= 10000) {
+                    sale *= 0.12;
+                } else if (sale > 10000) {
+                    sale *= 0.145;
                 }
                 break;
             default:
                 System.out.println("error");
                 return;
     }
-    console.log(sales.toFixed(2));
+    console.log(sale.toFixed(2));
 }
