@@ -10,7 +10,7 @@ function fishingBoat(lst) {
     }
     if (fishers <= 6) {
         rent *= 0.9;
-    } else if (fishers >= 7 && fishers <= 11) {
+    } else if (fishers > 7 && fishers <= 11) {
         rent *= 0.85;
     } else {
         rent *= 0.75;
