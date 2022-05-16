@@ -11,7 +11,7 @@ function operationsBetweenNumbers(lst) {
         case "/": res = (fst / sec).toFixed(2); break;
         case "%": res = fst % sec; break;
     }
-    if (res % 2 == 0) {evenOrOdd = "even"};
+    if (res % 2 == 0) {evenOrOdd = "even";}
     if (!sec && (sign === "/" || sign === "%")) {console.log(`Cannot divide ${fst} by zero`);}
     else if (sign == "/" || sign == "%") {console.log(`${fst} ${sign} ${sec} = ${res}`);}
     else {console.log(`${fst} ${sign} ${sec} = ${res} - ${evenOrOdd}`);}
