@@ -9,6 +9,6 @@ function vowelsSum(lst) {
             case "o": vlu += 4; break;
             case "u": vlu += 5; break;
         }
-}
+}   
     console.log(vlu)
 }
