@@ -1,10 +1,7 @@
-function accountBalance(lst) {
-    let idx = 0;
-    let tot = 0;
-    let cmd = lst[idx++];
-    while (cmd !== "NoMoreMoney") {let mny = Number(cmd); if (mny < 0) {console.log("Invalid operation!"); break;}
-        tot += mny;
-        console.log(`Increase: ${mny.toFixed(2)}`);
-        cmd = lst[idx++];    }
-    console.log(`Total: ${tot.toFixed(2)}`);
+function maxNumber(lst) {
+    let index = 0;
+    let data = lst[index++];
+    let max = Number.MIN_SAFE_INTEGER;
+    while (data !== "Stop") {let cnt = Number(data); max = cnt > max ? cnt : max; data = lst[index++];}
+    console.log(max);
 }
